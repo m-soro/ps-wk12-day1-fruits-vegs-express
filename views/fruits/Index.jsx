@@ -4,7 +4,8 @@ class Index extends React.Component {
   render() {
     const { fruits } = this.props;
     return (
-      <div>
+      <div className="container">
+        <link rel="stylesheet" type="text/css" href="/pico.min.css" />
         <h1>Fruits Index Page</h1>
         <ul>
           {fruits.map((fruit, i) => {
@@ -20,6 +21,9 @@ class Index extends React.Component {
             );
           })}
         </ul>
+        <nav>
+          <a href="/fruits/new">Create a New Fruit</a>
+        </nav>
       </div>
     );
   }
